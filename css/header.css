@@ -1,0 +1,134 @@
+@font-face {
+   font-family: 'omyu_pretty';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+   box-shadow: 0 0 3px #000;
+   z-index: 20;
+}
+
+.header__wrapper {
+   height: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 16px;
+}
+
+.header__start {
+   height: 40px;
+   line-height: 40px;
+}
+
+.header__hamburger {
+   border: none;
+   background-color: transparent;
+   font-size: 1.3rem;
+}
+
+.header__hamburger:hover {
+   background-color: #eaeaea;
+   border-radius: 40px;
+}
+
+.header__title {
+   font-size: 1.2rem;
+   margin-left: 6px;
+   font-weight: 600;
+   font-family: Roboto;
+}
+
+.header__title i {
+   color: rgb(255, 34, 89);
+}
+
+.header__center {
+   width: 50%;
+}
+
+.header__form {
+   display: flex;
+   max-width: 100%;
+}
+
+.header__input--text {
+   width: calc(100% - 60px);
+   padding: 0 10px;
+   border: 1px solid #8f8f8f;
+   border-right: none;
+   /* border-radius: 2px 0 0 2px; */
+   border-radius: 30px 0 0 30px;
+   font-family: 'omyu_pretty';
+   font-size: 1.2rem;
+}
+
+.header__input--icon {
+   font-size: 1.5rem;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   color: rgba(190, 222, 235, 1);
+   background-color: transparent;
+   border: 1px solid #8f8f8f;
+   border-left: none;
+   border-right: none;
+}
+
+.header__input--button {
+   width: 60px;
+   height: 40px;
+   font-family: 'omyu_pretty';
+   font-size: 1.2rem;
+   font-weight: 500;
+   background-color: rgba(190, 222, 235, 0.6);
+   border: 1px solid #8f8f8f;
+   border-left: none;
+   border-radius: 0 30px 30px 0;
+}
+
+.header__end {
+   display: flex;
+}
+
+.header__search {
+   display: none;
+   margin-right: 5px;
+   border: 0;
+   background-color: transparent;
+   font-size: 1.5rem;
+}
+
+.header__profile{
+   background: url(../imgs/evie-s-w1JE5duY62M-unsplash.jpg) center / cover no-repeat;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #eaeaea;
+   border-radius: 50%;
+}
+
+@media screen and (max-width:800px) {
+   .header__title {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width:400px){
+   .header__center {
+      display: none;
+   }
+   .header__search {
+      display: block;
+   }
+}
